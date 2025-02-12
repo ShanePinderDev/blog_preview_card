@@ -19,6 +19,8 @@
   --font-size-xxsmall: 0.625rem;
 }
 
+/* resets */
+
 html {
   box-sizing: border-box;
 }
@@ -102,14 +104,15 @@ body {
   font-size: var(--font-size-xsmall);
 }
 
-.blog-post-title {
+.blog-post-title-link {
   font-weight: var(--font-weight-extra-bold);
   font-size: var(--font-size-medium);
   color: var(--gray-950);
+  text-decoration: none;
 }
 
-.blog-post-title:hover,
-.blog-post-title:focus {
+.blog-post-title-link:hover,
+.blog-post-title-link:focus {
   color: var(--yellow);
 }
 
