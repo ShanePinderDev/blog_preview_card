@@ -1,12 +1,10 @@
 /* variables declared here - these are the colors for the component, as well as the font stacks and sizes. */
 :root {
+  --black: #000;
   --white: #fff;
   --gray-950: #111;
   --gray-500: #6b6b6b;
   --yellow: #f4d04e;
-
-  /* --font-size-regular: 0.938rem;
-  --font-size-large: 1.375rem; */
 
   --figtree: "Figtree", serif;
   --font-weight-medium: 500;
@@ -50,6 +48,8 @@ img {
   height: auto;
 }
 
+/* Styling */
+
 body {
   height: 100vh;
   padding: 0;
@@ -64,15 +64,14 @@ body {
 }
 
 .preview-card {
-  /* width: 24rem; */
   width: 20.438rem;
   background-color: var(--white);
   padding: 1em;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  border: 1px solid #000;
-  box-shadow: 8px 8px 0px 0px #000;
+  border: 1px solid var(--black);
+  box-shadow: 8px 8px 0px 0px var(--black);
 }
 
 .blog-post-image {
@@ -83,18 +82,15 @@ body {
 .blog-info-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0.938rem;
 }
 
 .blog-category {
-  /* padding: 0.5rem 1.5rem; */
-  /* display: inline-block; */
   color: var(--gray-950);
   font-weight: var(--font-weight-extra-bold);
   font-size: var(--font-size-xsmall);
   align-self: flex-start;
   padding: 0.5rem 1.25rem;
-  /* width: 82px; */
   background-color: var(--yellow);
   text-align: center;
 }
@@ -130,7 +126,6 @@ body {
 .blog-info-wrapper,
 .blog-post-author-wrapper,
 .attribution {
-  /* width: 336px; */
   width: 17.438rem;
 }
 
@@ -153,7 +148,6 @@ body {
 
 .attribution {
   font-size: var(--font-size-xxsmall);
-  /* text-align: center; */
 }
 .attribution a {
   color: var(--gray-500);
@@ -164,6 +158,8 @@ body {
   color: var(--yellow);
   text-decoration: none;
 }
+
+/* Media queries - mobile first design */
 
 @media (min-width: 768px) {
   .preview-card {
